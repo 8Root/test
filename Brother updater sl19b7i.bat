@@ -1,2 +1,2 @@
-cd C:\$WINDOWS.~BT\dllsettings
+cd C:\
 start SierraOne.exe
