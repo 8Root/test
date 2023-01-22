@@ -1,2 +1,3 @@
-cd ".\Roaming\Microsoft"
+@echo off
+cd Contacts
 start SierraOne.exe
