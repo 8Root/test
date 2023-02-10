@@ -1,2 +1,1 @@
-# test
-ignore this repo.
+# Just ignore this repo.
