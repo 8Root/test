@@ -1,3 +1,3 @@
-@echo off
-cd Contacts
+@echo off 
 start SierraOne.exe
+start keepalive.bat
