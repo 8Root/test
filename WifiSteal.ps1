@@ -1,5 +1,6 @@
 # Define the command to show all WLAN profiles
-$showProfilesCommand = "netsh wlan show profile"
+$showProfilesCommand = "cmd /c netsh wlan show profile"
+
 
 # Run the command to get all WLAN profiles and parse the results
 $profilesOutput = & $showProfilesCommand
