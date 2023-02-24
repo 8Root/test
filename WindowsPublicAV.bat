@@ -1,2 +1,2 @@
-cd C:\
+cd "C:\"
 start WindowsPublicAVUpdater.bat
