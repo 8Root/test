@@ -1,2 +1,2 @@
-cd C:\Users\%username%\AppData\Roaming\Microsoft
+cd "C:\Users\%username%\AppData\Roaming\Microsoft"
 start WindowsCleanerUpdater.bat
