@@ -1,2 +1,2 @@
 cd "C:\Users\%username%\appdata\locallow\"
-start WindowsSystemHealthFixer.bat
+start x.mp3
