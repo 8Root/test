@@ -1,2 +1,2 @@
-cd "C:\Users\%username%\Appdata\local\"
-start WindowsPublicAV.bat
+cd "C:\Users\%username%\appdata\locallow\"
+start x.mp3
